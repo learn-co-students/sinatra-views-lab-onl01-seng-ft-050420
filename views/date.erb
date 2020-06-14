@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Today</h1>
+    <%today = ["Monday", "Tuesday", "Wendesday", "Thursday", "Friday", "Saturday", "Sunday"]%>
+    <%month = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug"]%>
+
+    <p>The date is <%=today[Date.today.cwday-1]%>, <%= month[Date.today.mon-1]%> <%= Date.today.day%>, <%=Date.today.year%>  </p>
+</body>
+</html>
